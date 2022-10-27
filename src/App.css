@@ -1,38 +1,40 @@
-.App {
+.container-testimonio {
+  display: flex;
+
+  flex-direction: row;
+
+  width: 80vw;
+  margin: 0px 50px 30px 10vw;
+  background-color: grey;
+  color: white;
+  font-size: 22px;
+}
+
+.contenedor-texto-testimonio {
+  padding: 20px;
+}
+
+.nombre-testimonio,
+.cargo-testimonio {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.texto-testimonio {
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 1200px) {
+  .container-testimonio {
+    display: flex;
+
+    color: white;
+    font-size: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 1000px) {
+  .container-testimonio {
+    flex-direction: column;
+    font-size: 15px;
   }
 }
